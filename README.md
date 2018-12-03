@@ -1,1 +1,1 @@
-# TrenaProjectGBM
+# TrenaProjectIGAP
