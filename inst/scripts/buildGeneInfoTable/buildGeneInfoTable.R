@@ -1,14 +1,14 @@
 library(biomaRt)
-library(TrenaProjectIGAP)
+library(TrenaProjectGBM)
 
-igap <- TrenaProjectIGAP()
+gbm <- TrenaProjectGBM()
 
-mtx.names <- getExpressionMatrixNames(igap)
+mtx.names <- getExpressionMatrixNames(gbm)
 geneSymbols <- c()
 ens.genes <- c()
 
 for(mtx.name in mtx.names){
-   mtx <- getExpressionMatrix(igap, mtx.name)
+   mtx <- getExpressionMatrix(gbm, mtx.name)
    gene.1 <- rownames(mtx)[1]
    if(grepl("^ENSG", gene.1)){
      ens.genes <- unique(c(ens.genes, rownames(mtx)))
