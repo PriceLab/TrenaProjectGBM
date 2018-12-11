@@ -1,7 +1,7 @@
 Package: TrenaProjectGBM
 Title: GBM gene expression and variant data
-Date: 2018-12-03
-Version: 0.99.02
+Date: 2018-12-10
+Version: 0.99.03
 Author: Cory Funk, Paul Shannon
 Description: Provides a single source for all trena GBM brain models, from multiple sources, with
    several normalization schemes, along with variants, imputed variants, and sample phenotypes.
